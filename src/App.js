@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { Routes, Route, Link } from 'react-router-dom';
+
+import OneDayWeather from './pages/OneDayWeather/OneDayWeather';
+import LongTermWeather from './pages/LongTermWeather/LongTermWeather';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ul>
+          <li key="first-link" className="menu-item"><Link to={'/'}>Today weather in Lithuania</Link></li>
+          <li key="second-link" className="menu-item"><Link to={'/longtermweather'}>Forecast of weather in Lithuania</Link></li>
+        </ul>
       </header>
+      <main>
+        <section>
+          <Routes>
+            <Route path="/" element={<OneDayWeather />} />
+            <Route path="/longtermweather" element={<LongTermWeather />} />
+          </Routes>
+        </section>
+      </main>
+      <footer>
+
+      </footer>
     </div>
   );
 }
