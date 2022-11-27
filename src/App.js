@@ -8,14 +8,14 @@ import LongTermWeather from './pages/LongTermWeather/LongTermWeather';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ul>
-          <li key="first-link" className="menu-item"><Link to={'/'}>Today weather in Lithuania</Link></li>
-          <li key="second-link" className="menu-item"><Link to={'/longtermweather'}>Forecast of weather in Lithuania</Link></li>
+      <header className="app-header">
+        <ul className="navigation">
+          <li key="today-weatherlink" className="menu-item"><Link to={'/'}>Today weather in Lithuania</Link></li>
+          <li key="forecast-weather-link" className="menu-item"><Link to={'/longtermweather'}>Forecast of weather in Lithuania</Link></li>
         </ul>
       </header>
       <main>
-        <section>
+        <section className="main-content">
           <Routes>
             <Route path="/" element={<OneDayWeather />} />
             <Route path="/longtermweather" element={<LongTermWeather />} />
