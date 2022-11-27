@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="app-header">
         <ul className="navigation">
-          <li key="today-weatherlink" className="menu-item"><Link to={'/'}>Today weather</Link></li>
+          <li key="today-weatherlink" className="menu-item"><Link to={'/'}>Realtime weather</Link></li>
           <li key="forecast-weather-link" className="menu-item"><Link to={'/longtermweather'}>Forecast of weather</Link></li>
         </ul>
       </header>

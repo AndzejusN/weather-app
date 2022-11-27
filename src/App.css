@@ -3,12 +3,13 @@
 }
 
 .App .app-header .navigation {
-  list-style-type: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0 0 0;
+  list-style-type: none;
+  padding: 50px 0;
   margin: 0;
+  gap: 30px;
 }
 
 .App .app-header .navigation li a {
@@ -17,10 +18,21 @@
   padding: 20px 25px 25px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   font-size: 20px;
+  border-bottom: 2px solid;
+  border-bottom-color: transparent;
+  transition: color, border-bottom-color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
 }
 
 .App .app-header .navigation li a:hover {
-  background-color: linear-gradient(45deg, rgba(156,126,195,1) 0%, rgba(156,126,195,1) 100%);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  color: lightblue;
+  border-bottom-color: lightblue;
+}
+
+@media screen and (max-width: 540px) {
+  .App .app-header .navigation {
+    flex-direction: column;
+
+  }
 }
