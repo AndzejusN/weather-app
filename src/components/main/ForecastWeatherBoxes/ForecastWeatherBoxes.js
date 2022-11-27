@@ -1,5 +1,6 @@
 import './ForecastWeatherBoxes.css';
 import ForecastWeatherOneBox from './ForecastWeatherOneBox/ForecastWeatherOneBox';
+import RoundSpinner from '../../loader/RoundSpinner/RoundSpinner'
 
 import axios from 'axios';
 import debounce from 'lodash.debounce';
@@ -44,7 +45,7 @@ const ForecastWeatherBoxes = () => {
                         <ForecastWeatherOneBox dataList={dataList} city={city} />
 
                     </section>
-                ) : ('waiting for data')
+                ) : < RoundSpinner />
             }
         </>
     );

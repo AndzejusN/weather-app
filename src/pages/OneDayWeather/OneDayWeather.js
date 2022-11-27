@@ -1,5 +1,7 @@
 import './OneDayWeather.css';
 import OneDayWeatherBox from '../../components/main/OneDayWeatherBox/OneDayWeatherBox';
+import RoundSpinner from '../../components/loader/RoundSpinner/RoundSpinner'
+
 
 import axios from 'axios';
 import debounce from 'lodash.debounce';
@@ -40,7 +42,7 @@ const OneDayWeather = () => {
 
             {dataList ? (
                 < OneDayWeatherBox data={dataList} />
-            ) : ('waiting for data')}
+            ) : (<RoundSpinner />)}
         </>
     );
 }

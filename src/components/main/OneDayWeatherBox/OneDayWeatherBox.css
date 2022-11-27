@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
     min-height: 70vh;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .section-container .weather-box-wrapper {
