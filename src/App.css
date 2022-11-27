@@ -15,11 +15,12 @@
   color: white;
   text-decoration: none;
   padding: 20px 25px 25px;
-  border-left: 3px solid transparent;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 20px;
 }
 
 .App .app-header .navigation li a:hover {
-  background-color: rgb(105, 68, 141);
+  background-color: linear-gradient(45deg, rgba(156,126,195,1) 0%, rgba(156,126,195,1) 100%);
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 }

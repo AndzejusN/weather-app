@@ -1,0 +1,105 @@
+.container-forecast .weather-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 255, .3);
+}
+
+.container-forecast .weather-box-wrapper:first-child .month-day {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container-forecast .weather-box-wrapper:first-child .temp-place {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container-forecast>.weather-box-wrapper:last-child .month-day {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+}
+
+.container-forecast>.weather-box-wrapper:last-child .temp-place {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+
+.container-forecast .weather-box-wrapper .month-day {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 30%;
+    background-color: cadetblue;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    padding: 10px;
+}
+
+.container-forecast .weather-box-wrapper .weather-icon {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+}
+
+.container-forecast .weather-box-wrapper .weather-icon img {
+    width: 150px;
+    height: 125px;
+}
+
+.container-forecast .weather-box-wrapper .temp-place {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
+
+.container-forecast .weather-box-wrapper .temp-place .place-grade {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.container-forecast .weather-box-wrapper .temp-place .place-words {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 100%;
+    height: 25%;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: start;
+    color: white;
+    padding: 5px 5px 5px 10px;
+}
+
+.container-forecast .weather-box-wrapper .temp-place .place-city {
+    width: 100%;
+    height: 25%;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-align: start;
+    color: white;
+    padding: 5px 5px 5px 10px;
+}
+
+.text-color-blue {
+    color: rgb(0, 170, 255);
+}
+
+.text-color-red {
+    color: rgb(234, 71, 71);
+}

@@ -11,7 +11,7 @@ const ForecastWeatherOneBox = (props) => {
                 <div key="index" className="weather-box-wrapper">
                     <div className="month-day">
                         <div>{list.dt_txt.split(' ')[0]}</div>
-                        <div>{list.dt_txt.split(' ')[1]}</div>
+                        <div>{list.dt_txt.split(' ')[1].slice(0,5)} o'clock</div>
                     </div>
                     <div className="weather-icon">
                         <img src={`https://openweathermap.org/img/w/${list.weather[0].icon}.png`}
