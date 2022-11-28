@@ -5,9 +5,8 @@ const ForecastWeatherOneBox = (props) => {
     const cityName = props.city;
 
     return (
-        data.map((listElement, index) => {
-            return (
-                <div key="index" className="weather-box-wrapper">
+        data.map((listElement, index) => (
+                <div key={index} className="weather-box-wrapper">
                     <div className="month-day">
                         <div>{listElement.dt_txt.split(' ')[0]}</div>
                         <div>{listElement.dt_txt.split(' ')[1].slice(0,5)} o'clock</div>
@@ -27,7 +26,7 @@ const ForecastWeatherOneBox = (props) => {
                     </div>
                 </div>
             )
-        })
+        )
     );
 }
 
