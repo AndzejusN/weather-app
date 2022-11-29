@@ -13,12 +13,10 @@
 
 ### Projekto pradžia:
 #### Surinkus komandą pagrindinėje projekto direktorijoje: `npm start`
-#### projektas pradės veikti adresu: <http://localhost:3000> automatiškai.
+#### projektas pradės veikti naršyklėje adresu: <http://localhost:3000> automatiškai.
 
 ### Kita informacija:
 #### Code Academy - Front End Studijos (FEU1)
 #### Projektą sukūrė studentas - Andžejus Naimovičius
 #### 2022 11 29d.
 #### Vilnius
-
-
