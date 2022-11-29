@@ -1,4 +1,4 @@
-# Orai realiu laiku ir prognozė kas trys valandas penkioms dienoms
+## Orai realiu laiku ir prognozė kas trys valandas penkioms dienoms
 
 ### Projekto struktūra:
 
