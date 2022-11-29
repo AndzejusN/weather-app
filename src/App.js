@@ -6,6 +6,7 @@ import OneDayWeather from './pages/OneDayWeather/OneDayWeather';
 import LongTermWeather from './pages/LongTermWeather/LongTermWeather';
 
 function App() {
+
   return (
     <div className="App">
       <header className="app-header">
@@ -23,7 +24,6 @@ function App() {
         </section>
       </main>
       <footer>
-
       </footer>
     </div>
   );

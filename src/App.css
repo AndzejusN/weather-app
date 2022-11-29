@@ -30,6 +30,17 @@
   border-bottom-color: lightblue;
 }
 
+.section {
+  display: flex;
+  height: 200px;
+  justify-content: flex-end;
+}
+
+.section h2 {
+  align-self: flex-end;
+}
+
+
 @media screen and (max-width: 540px) {
   .App .app-header .navigation {
     flex-direction: column;
