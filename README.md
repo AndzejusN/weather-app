@@ -17,7 +17,7 @@
 
 ### Kita informacija:
 #### Code Academy - Front End Studijos (FEU1)
-#### Projektą sukūrė - Andžejus Naimovičius
+#### Projektą sukūrė studentas - Andžejus Naimovičius
 #### 2022 11 29d.
 #### Vilnius
 
